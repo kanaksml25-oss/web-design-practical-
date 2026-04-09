@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Responsive Webpage</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    /* NEW BACKGROUND */
+    background: linear-gradient(to right, #dfe9f3, #ffffff);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Hero Image */
+.hero img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background: #ff7e5f;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* Container */
+.container {
+    padding: 30px;
+}
+
+/* Multi-column content */
+.content {
+    column-count: 3;
+    column-gap: 30px;
+    text-align: justify;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+/* Transform only */
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card i {
+    font-size: 35px;
+    color: #ff7e5f;
+    margin: 15px 0;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 15px 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #ff7e5f;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .content {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        column-count: 1;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero img {
+        height: 220px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Modern Responsive Webpage</h1>
+    <p>Updated Background Color Theme</p>
+</header>
+
+<!-- Hero Image -->
+<div class="hero">
+    <img src="https://picsum.photos/1200/400" alt="Banner">
+</div>
+
+<nav>
+    <a href="#"><i class="fa fa-home"></i> Home</a>
+    <a href="#"><i class="fa fa-user"></i> About</a>
+    <a href="#"><i class="fa fa-cogs"></i> Services</a>
+    <a href="#"><i class="fa fa-envelope"></i> Contact</a>
+</nav>
+
+<div class="container">
+
+    <section class="content">
+        <p>CSS3 enables modern responsive layouts with beautiful background styles.</p>
+        <p>Gradient backgrounds improve visual appeal and user experience.</p>
+        <p>Combining colors, fonts, and layout creates professional web design.</p>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <img src="https://picsum.photos/300/200?1">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Responsive</h3>
+            <p>Works on all devices.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/200?2">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Design</h3>
+            <p>Attractive UI layout.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/200?3">
+            <i class="fas fa-rocket"></i>
+            <h3>Performance</h3>
+            <p>Fast and lightweight.</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Modern Web Design</p>
+</footer>
+
+</body>
+</html>
