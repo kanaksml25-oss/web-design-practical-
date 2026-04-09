@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Scholarship / Seminar Registration Form</title> 
+ 
+<style> 
+body{ 
+    font-family: Arial, sans-serif; 
+    background-color:#f4f4f4; 
+} 
+ 
+form{ 
+    width:500px; 
+    margin:auto; 
+    background:white; 
+    padding:20px; 
+} 
+ 
+fieldset{ 
+    margin-bottom:15px; 
+} 
+ 
+legend{ 
+    font-weight:bold; 
+} 
+ 
+label{ 
+    display:block; 
+    margin-top:10px; 
+} 
+ 
+input,select{ 
+    width:95%; 
+    padding:5px; 
+} 
+ 
+.options input{ 
+    width:auto; 
+} 
+ 
+ 
+</style> 
+ 
+</head> 
+<body> 
+ 
+<form> 
+ 
+<h2>Scholarship / Seminar Registration Form</h2> 
+ 
+<fieldset> 
+<legend>Personal Information</legend> 
+ 
+<label>Full Name:</label> 
+<input type="text" name="fullname" value="Kanak Shahu"> 
+ 
+<label>Email:</label> 
+<input type="email" name="email" value="shahukanak@gmail.com"> 
+ 
+<label>Phone Number:</label> 
+<input type="tel" name="phone" value="8007731600"> 
+ 
+</fieldset> 
+ 
+<fieldset> 
+<legend>Registration Details</legend> 
+ 
+<label>Registration Type:</label> 
+<div class="options"> 
+<input type="radio" name="type"> Scholarship 
+<input type="radio" name="type"> Seminar 
+</div> 
+ 
+<label>Select Course:</label> 
+<select> 
+<option>Engineering</option> 
+<option>Medical</option> 
+<option>Management</option> 
+<option>Arts</option> 
+</select> 
+ 
+</fieldset> 
+ 
+<fieldset> 
+<legend>Areas of Interest</legend> 
+ 
+<div class="options"> 
+<input type="checkbox"> Technology<br> 
+<input type="checkbox"> Research<br> 
+<input type="checkbox"> Innovation<br> 
+<input type="checkbox"> Leadership 
+ 
+ 
+</div> 
+ 
+</fieldset> 
+ 
+<input type="submit" value="Register"> 
+<input type="reset" value="Clear"> 
+ 
+</form> 
+ 
+</body> 
+</html> 
+ 
